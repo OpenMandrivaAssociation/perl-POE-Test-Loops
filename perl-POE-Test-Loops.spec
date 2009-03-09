@@ -1,6 +1,6 @@
 
 %define realname   POE-Test-Loops
-%define version    1.004
+%define version    1.005
 %define release    %mkrel 1
 
 Name:       perl-%{realname}
