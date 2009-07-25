@@ -1,21 +1,19 @@
+%define upstream_name    POE-Test-Loops
+%define upstream_version 1.020
 
-%define realname   POE-Test-Loops
-%define version    1.005
-%define release    %mkrel 1
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    Reusable tests for POE::Loop authors
-Source:     http://www.cpan.org/modules/by-module/POE/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
-BuildRequires: perl(Test::More)
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Test::More)
 BuildArch: noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 POE::Test::Loops contains one function, generate(), which will generate all
@@ -27,9 +25,8 @@ poe-gen-tests manpage also documents the POE::Test::Loops system in more
 detail.
 
 
-
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
