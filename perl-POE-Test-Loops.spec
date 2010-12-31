@@ -1,5 +1,5 @@
 %define upstream_name    POE-Test-Loops
-%define upstream_version 1.035
+%define upstream_version 1.036
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -46,7 +46,6 @@ rm -rf %buildroot
 %defattr(-,root,root)
 %doc CHANGES README
 %{_mandir}/man3/*
-%perl_vendorlib/*
-/usr/bin/poe-gen-tests
-/usr/share/man/man1/poe-gen-tests.1.lzma
-
+%{_mandir}/man1/poe-gen-tests.1*
+%{perl_vendorlib}/POE
+%{_bindir}/poe-gen-tests
