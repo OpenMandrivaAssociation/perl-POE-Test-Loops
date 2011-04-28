@@ -1,5 +1,5 @@
 %define upstream_name    POE-Test-Loops
-%define upstream_version 1.040
+%define upstream_version 1.050
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
