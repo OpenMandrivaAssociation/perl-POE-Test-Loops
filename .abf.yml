@@ -1,2 +1,4 @@
+removed_sources:
+  POE-Test-Loops-1.312.tar.gz: cf1cde9ff78a66c9dab1e82028084ef476edf995
 sources:
-  "POE-Test-Loops-1.312.tar.gz": cf1cde9ff78a66c9dab1e82028084ef476edf995
+  POE-Test-Loops-1.354.tar.gz: 8b18621700bb60deef1609c9715fbc942c12df74
