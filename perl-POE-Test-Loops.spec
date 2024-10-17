@@ -8,7 +8,7 @@ Release:	3
 Summary:	Reusable tests for POE::Loop authors
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/POE-Test-Loops-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
