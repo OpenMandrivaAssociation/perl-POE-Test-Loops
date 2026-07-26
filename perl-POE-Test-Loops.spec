@@ -1,15 +1,13 @@
 %define upstream_name    POE-Test-Loops
-%define upstream_version 1.360
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.360
+Release:	2
 
 Summary:	Reusable tests for POE::Loop authors
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rcaputo/poe-test-loops
-Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Test-Loops-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Test-Loops-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ poe-gen-tests manpage also documents the POE::Test::Loops system in more
 detail.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -94,8 +92,7 @@ make test
 * Sat Jul 25 2009 Jérôme Quelin <jquelin@mandriva.org> 1.20.0-1mdv2010.0
 + Revision: 399605
 - update to 1.020
-- using %%perl_convert_version
-- fixed license field
+- using %1.360 fixed license field
 
 * Mon Mar 09 2009 Jérôme Quelin <jquelin@mandriva.org> 1.005-1mdv2009.1
 + Revision: 353094
